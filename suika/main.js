@@ -17,5 +17,5 @@ const render = Render.create({
     }
 })
 
-Render.run(runner);
+Render.run(render);
 Runner.run(engine);
