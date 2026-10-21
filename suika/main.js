@@ -27,6 +27,7 @@ const ground = Bodies.rectangle(310, 820, 620, 60,{
 
 const topLine = Bodies.rectangle(310, 150, 620, 2,{
     isStatic : true,
+    isSensor: true,
     render: {fillStyle: '#000000'}
 })
 
@@ -53,7 +54,7 @@ function addFruit(){
     const body = Bodies.circle(300, 50, fruit.radius, {
         index: index,
         render: {
-            sprite: { texture: '${fruit.name}.png'},
+            sprite: { texture: `${fruit.name}.png`},
         }
     })
 
